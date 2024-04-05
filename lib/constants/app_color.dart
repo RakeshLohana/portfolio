@@ -6,9 +6,9 @@ class MyColor {
   static Color light_blue = Color(0xFF04c3ff);
   // static Color black = Color(0xFF09BEAD);
   // static Color black = Color(0xFF0CBFAE);
-  // static Color black = Color(0xFF04c3ff);
+  static Color gray = Colors.grey.shade800;
   static Color light_purple = Color(0xFFe44f4fd1);
   static Color purple = Color(0xFF202235);
   static Color orange = Color(0xFFF57F17);
-  // static Color black = Color(0xFF0CBFAE);
+  static Color text_field_color = Color(0xFFD7D6D9);
 }

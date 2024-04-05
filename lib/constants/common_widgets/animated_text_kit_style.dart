@@ -12,6 +12,6 @@ class MyStyles {
   ///TextSpan
   static TextStyle richTextSpan(Color color) {
     return GoogleFonts.poppins(
-        color: color, fontSize: 23, fontWeight: FontWeight.w600);
+        color: color, fontSize: 25, fontWeight: FontWeight.w600);
   }
 }

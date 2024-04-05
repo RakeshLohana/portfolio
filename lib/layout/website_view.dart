@@ -1,6 +1,8 @@
 import 'package:chat_socket_io/Controller/controller.dart';
+import 'package:chat_socket_io/View/Contact%20Me/contact_me_widget.dart';
 import 'package:chat_socket_io/View/Introduction/introduction_section.dart';
 import 'package:chat_socket_io/constants/app_color.dart';
+import 'package:chat_socket_io/constants/common_widgets/custom_sizes.dart';
 import 'package:chat_socket_io/constants/common_widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -13,11 +15,11 @@ class WebsiteView extends StatefulWidget {
 }
 
 class _WebsiteViewState extends State<WebsiteView> {
-  late final Controller controller;
+  late final WebController controller;
 
   @override
   void initState() {
-    controller = Get.put(Controller());
+    controller = Get.put(WebController());
     super.initState();
   }
 
@@ -29,12 +31,16 @@ class _WebsiteViewState extends State<WebsiteView> {
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
-
     return Scaffold(
-      body: Column( children: [
-        IntroductionSection(controller: controller),
-      ]),
+      body: SingleChildScrollView(
+        child: Column(children: [
+          IntroductionSection(controller: controller),
+          ContactMe(controller: controller),
+          SizedBox(
+            height: 500,
+          )
+        ]),
+      ),
     );
   }
 }

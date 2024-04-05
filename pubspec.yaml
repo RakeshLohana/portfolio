@@ -39,7 +39,8 @@ dependencies:
   get:
   font_awesome_flutter:
   animated_text_kit: ^4.2.2
-
+  icons_plus: 
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
