@@ -9,6 +9,8 @@ class CustomText extends StatelessWidget {
   final double? fontSize;
   final TextAlign? textAlign;
   final VoidCallback? onTap;
+  final double? lineSpacing;
+  final double? wordSpacing;
 
   const CustomText(
       {super.key,
@@ -17,7 +19,10 @@ class CustomText extends StatelessWidget {
       this.fontWeight,
       this.fontSize,
       this.onTap,
+      this.lineSpacing,
+      this.wordSpacing,
       this.textAlign});
+      
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +33,10 @@ class CustomText extends StatelessWidget {
         textAlign: textAlign ?? TextAlign.center,
       
         style: GoogleFonts.poppins(
+          
             color: color ?? MyColor.white,
+            height: lineSpacing??0.0,
+            wordSpacing: wordSpacing??0.0,
           
             fontSize: fontSize ?? 12,
             fontWeight: fontWeight ?? FontWeight.w300),

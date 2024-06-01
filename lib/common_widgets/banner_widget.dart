@@ -1,6 +1,6 @@
 import 'package:chat_socket_io/constants/app_color.dart';
-import 'package:chat_socket_io/constants/common_widgets/custom_sizes.dart';
-import 'package:chat_socket_io/constants/common_widgets/custom_text.dart';
+import 'package:chat_socket_io/common_widgets/custom_sizes.dart';
+import 'package:chat_socket_io/common_widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
